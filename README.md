@@ -1,21 +1,27 @@
 # Fraud Detection Project
 
-This repository contains a simple machine learning project for detecting fraudulent financial transactions using the [Fraud Detection Dataset](https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset?resource=download).
+This project demonstrates a machine learning workflow for detecting fraudulent financial transactions.  
+It uses the [Fraud Detection Dataset](https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset?resource=download) to build a predictive model and provides a simple Streamlit app for testing predictions interactively.
 
 ## Files
 
 - **analysis_model.ipynb**  
-  Jupyter notebook for data analysis, feature engineering, and model training.
+  Notebook containing exploratory data analysis (EDA), feature engineering, model training, and evaluation.
 
 - **fraud_detection_pipeline.pkl**  
-  Saved machine learning pipeline used for predictions.
+  The trained machine learning pipeline exported with `joblib`.  
+  It includes preprocessing steps and the final classification model.
 
 - **fraud_detection.py**  
-  Streamlit web application that loads the trained pipeline and predicts if a transaction is fraudulent based on user inputs.
+  Streamlit web application. Loads the trained pipeline and allows users to input transaction details (type, amount, balances) to get a fraud prediction.
 
-## Usage
+## How to Run
 
-Run the Streamlit app:
-
-```bash
-streamlit run fraud_detection.py
+1. Install dependencies:
+   ```bash
+   pip install pandas scikit-learn joblib streamlit
+2. Start the Streamlit app:
+   ```bash
+    streamlit run fraud_detection.py
+3.Enter transaction details in the interface.
+  The app will display whether the transaction is likely fraudulent (1) or legitimate (0).
