@@ -24,4 +24,5 @@ It uses the [Fraud Detection Dataset](https://www.kaggle.com/datasets/amanalisid
    ```bash
     streamlit run fraud_detection.py
 3.Enter transaction details in the interface.
+
   The app will display whether the transaction is likely fraudulent (1) or legitimate (0).
