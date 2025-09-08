@@ -1,7 +1,7 @@
 # Fraud Detection Project
 
 This project demonstrates a machine learning workflow for detecting fraudulent financial transactions.  
-It uses the [Fraud Detection Dataset] to build a predictive model and provides a simple Streamlit app for testing predictions interactively.
+It uses the Fraud Detection Dataset to build a predictive model and provides a simple Streamlit app for testing predictions interactively.
 
 ## Files
 
